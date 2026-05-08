@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,26 +7,6 @@
   <title>Michelle Stanković</title>
 
   <style>
-
-    .photo-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 30px;
-}
-
-.photo-text {
-  flex: 1;
-}
-
-.profile-photo {
-  width: 170px;
-  height: 170px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 1px solid #d8d6ce;
-  flex-shrink: 0;
-}
     body {
       margin: 0;
       background: #f6f5f1;
@@ -35,9 +16,21 @@
     }
 
     main {
-      max-width: 760px;
+      max-width: 800px;
       margin: 0 auto;
       padding: 60px 24px 80px;
+    }
+
+    .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 36px;
+      margin-bottom: 28px;
+    }
+
+    .top-text {
+      flex: 1;
     }
 
     h1 {
@@ -52,13 +45,21 @@
     }
 
     .role {
-      font-size: 16px;
+      font-size: 18px;
       color: #444;
-      margin-bottom: 24px;
+      margin-bottom: 0;
+    }
+
+    .profile-photo {
+      width: 170px;
+      height: 170px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 1px solid #d8d6ce;
+      flex-shrink: 0;
     }
 
     .links {
-      font-size: 15px;
       margin-bottom: 34px;
     }
 
@@ -90,21 +91,37 @@
     a:hover {
       border-bottom-color: #174a7c;
     }
+
+    @media (max-width: 650px) {
+      .top {
+        display: block;
+      }
+
+      .profile-photo {
+        margin-top: 24px;
+      }
+    }
   </style>
 </head>
 
 <body>
   <main>
-<h1>Michelle Stanković</h1>
+    <div class="top">
+      <div class="top-text">
+        <h1>Michelle Stanković</h1>
 
-<p class="role">
-  Postdoctoral Researcher<br>
-  Faculty of Translation &amp; Language Sciences<br>
-  Universitat Pompeu Fabra<br>
-  Poblenou Campus<br>
-  Roc Boronat 138, 08018 Barcelona, Spain
-</p>
-<img src="profile.jpg" alt="Photo of Michelle Stanković" class="profile-photo">
+        <p class="role">
+          Postdoctoral Researcher<br>
+          Faculty of Translation &amp; Language Sciences<br>
+          Universitat Pompeu Fabra<br>
+          Poblenou Campus<br>
+          Roc Boronat 138, 08018 Barcelona, Spain
+        </p>
+      </div>
+
+      <img src="profile.jpg" alt="Photo of Michelle Stanković" class="profile-photo">
+    </div>
+
     <p class="links">
       <a href="https://scholar.google.com/citations?user=vBzZmm0AAAAJ&hl=en&authuser=2">Google Scholar</a>
       <a href="https://orcid.org/0000-0001-7200-8245">ORCID</a>
