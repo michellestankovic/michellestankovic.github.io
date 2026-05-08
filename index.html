@@ -20,29 +20,25 @@
       padding: 60px 24px 80px;
     }
 
-    .top {
+    h1 {
+      font-size: 42px;
+      font-weight: normal;
+      margin: 0 0 18px;
+      line-height: 1.15;
+    }
+
+    p {
+      margin: 0 0 18px;
+    }
+
+    .address-photo {
       display: flex;
       justify-content: space-between;
-      align-items: flex-start;
+      align-items: center;
       gap: 40px;
       margin-bottom: 30px;
     }
 
-    .top-text {
-      flex: 1;
-    }
-
-    h1 {
-      font-size: 42px;
-      font-weight: normal;
-      margin: 0 0 12px;
-      line-height: 1.15;
-    }
-
-    p {
-      margin: 0 0 18px;
-    }
-
     .role {
       font-size: 18px;
       color: #444;
@@ -50,13 +46,12 @@
     }
 
     .profile-photo {
-      width: 175px;
-      height: 175px;
+      width: 165px;
+      height: 165px;
       object-fit: cover;
       border-radius: 50%;
       border: 1px solid #d8d6ce;
       flex-shrink: 0;
-      margin-top: 4px;
     }
 
     .links {
@@ -97,168 +92,16 @@
 <body>
   <main>
 
-    <div class="top">
-      <div class="top-text">
-        <h1>Michelle Stanković</h1>
+    <h1>Michelle Stanković</h1>
 
-        <p class="role">
-          Postdoctoral Researcher<br>
-          Faculty of Translation &amp; Language Sciences<br>
-          Universitat Pompeu Fabra<br>
-          Poblenou Campus<br>
-          Roc Boronat 138, 08018 Barcelona, Spain
-        </p>
-      </div>
-
-      <img src="profile.jpg" alt="Photo of Michelle Stanković" class="profile-photo">
-    </div>
-
-    <p class="links">
-      <a href="https://scholar.google.com/citations?user=vBzZmm0AAAAJ&hl=en&authuser=2">Google Scholar</a>
-      <a href="https://orcid.org/0000-0001-7200-8245">ORCID</a>
-      <a href="https://www.upf.edu/web/valence-asymmetries/project-members">VA Project Website</a>
-    </p>
-
-    <p>
-      I am a cognitive scientist. I am interested in how emotion shapes language processing, especially for bilingual speakers. I’m also interested in how language can influence decision-making, especially in bilingual and migrant communities.
-    </p>
-
-    <p>
-      Currently, I am working for the Valence Asymmetries ERC Project. I received my PhD in Psychology from Curtin University in Australia.
-    </p>
-
-    <p>
-      I don’t like self-promotion. If you have questions about my work, send me an email: <a href="mailto:Michelle.stankovic@upf.edu">Michelle.stankovic@upf.edu</a>.
-    </p>
-
-    <p class="news-title">News</p>
-
-    <p class="news">
-      <a href="https://mcmoyer11.github.io/pages/esslli-2026.html">ESSLLI Course</a>
-    </p>
-
-  </main>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Michelle Stanković</title>
-
-  <style>
-    body {
-      margin: 0;
-      background: #f6f5f1;
-      color: #1f1f1f;
-      font-family: Georgia, "Times New Roman", serif;
-      line-height: 1.65;
-    }
-
-    main {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 60px 24px 80px;
-    }
-
-    .top {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 36px;
-      margin-bottom: 28px;
-    }
-
-    .top-text {
-      flex: 1;
-    }
-
-    h1 {
-      font-size: 42px;
-      font-weight: normal;
-      margin: 0 0 12px;
-      line-height: 1.15;
-    }
-
-    p {
-      margin: 0 0 18px;
-    }
-
-    .role {
-      font-size: 18px;
-      color: #444;
-      margin-bottom: 0;
-    }
-
-    .profile-photo {
-      width: 170px;
-      height: 170px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 1px solid #d8d6ce;
-      flex-shrink: 0;
-    }
-
-    .links {
-      margin-bottom: 34px;
-    }
-
-    .links a {
-      display: inline-block;
-      margin-right: 16px;
-      margin-bottom: 8px;
-    }
-
-    .news-title {
-      margin-top: 38px;
-      padding-top: 18px;
-      border-top: 1px solid #d8d6ce;
-      font-size: 22px;
-    }
-
-    .news a {
-      display: block;
-      width: fit-content;
-      margin-bottom: 10px;
-    }
-
-    a {
-      color: #174a7c;
-      text-decoration: none;
-      border-bottom: 1px solid #b8c9d8;
-    }
-
-    a:hover {
-      border-bottom-color: #174a7c;
-    }
-
-    @media (max-width: 650px) {
-      .top {
-        display: block;
-      }
-
-      .profile-photo {
-        margin-top: 24px;
-      }
-    }
-  </style>
-</head>
-
-<body>
-  <main>
-    <div class="top">
-      <div class="top-text">
-        <h1>Michelle Stanković</h1>
-
-        <p class="role">
-          Postdoctoral Researcher<br>
-          Faculty of Translation &amp; Language Sciences<br>
-          Universitat Pompeu Fabra<br>
-          Poblenou Campus<br>
-          Roc Boronat 138, 08018 Barcelona, Spain
-        </p>
-      </div>
+    <div class="address-photo">
+      <p class="role">
+        Postdoctoral Researcher<br>
+        Faculty of Translation &amp; Language Sciences<br>
+        Universitat Pompeu Fabra<br>
+        Poblenou Campus<br>
+        Roc Boronat 138, 08018 Barcelona, Spain
+      </p>
 
       <img src="profile.jpg" alt="Photo of Michelle Stanković" class="profile-photo">
     </div>
@@ -289,6 +132,7 @@
       <a href="https://www.upf.edu/web/valence-asymmetries/activities/-/asset_publisher/OwocvDZfgCua/content/ways-of-speaking-badly-insults-slurs-and-confrontational-speech-one-day-workshop-29th-april-2026-upf-poblenou/maximized">Ways of Speaking Badly Workshop</a>
       <a href="https://eventum.upf.edu/139635/detail/valence-asymmetries-conference.html">Valence Asymmetries Conference</a>
     </p>
+
   </main>
 </body>
 </html>
